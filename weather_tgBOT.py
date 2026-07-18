@@ -1,10 +1,10 @@
 import telebot
 import config
 import requests
-from dotenv import load_doenv
+from dotenv import load_dotenv
 import os
 
-load_doenv()
+load_dotenv()
 WEATHER_API_KEY = os.getenv('WEATHER_API_KEY')
 
 bot = telebot.TeleBot(os.getenv('TOKEN'))
